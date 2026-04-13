@@ -173,15 +173,21 @@ An interactive dashboard is built using **Streamlit**.
 
 ### 🔹 ΔE Distribution
 
-![DeltaE Distribution](images/deltaE.png)
+![DeltaE Distribution]([deltaE distribution.png](https://github.com/HIMANSHI549/Akzonobel_lab/blob/master/deltaE%20distribution.png))
 
 ### 🔹 Accuracy vs Threshold
 
-![Accuracy Curve](images/accuracy.png)
+![Accuracy Curve]([images/accuracy.png](https://github.com/HIMANSHI549/Akzonobel_lab/blob/master/accuracy%20vs%20threshold.png))
 
 ### 🔹 True vs Predicted (L Channel)
 
-![Scatter Plot](images/scatter.png)
+![Scatter Plot]([images/scatter.png](https://github.com/HIMANSHI549/Akzonobel_lab/blob/master/true%20vs%20pred%20L.png))
+
+### 🔹 Training Loss(all folds)
+
+![Scatter Plot](### 🔹 True vs Predicted (L Channel)
+
+![Scatter Plot]([images/scatter.png](https://github.com/HIMANSHI549/Akzonobel_lab/blob/master/true%20vs%20pred%20L.png))
 
 
 # 📁 Project Structure
