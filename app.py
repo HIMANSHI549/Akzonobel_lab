@@ -54,6 +54,7 @@ if file:
             ax.hist(deltaE, bins=50)
             ax.set_title("DeltaE Distribution")
             st.pyplot(fig)
+            plt.savefig("images/deltaE.png", dpi=300, bbox_inches='tight')
 
         # Scatter
         with col2:
@@ -63,3 +64,4 @@ if file:
                     [y_test[:,0].min(), y_test[:,0].max()])
             ax.set_title("True vs Predicted L")
             st.pyplot(fig)
+            plt.savefig("images/scatter.png", dpi=300, bbox_inches='tight')
