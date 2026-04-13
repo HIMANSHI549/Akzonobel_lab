@@ -169,26 +169,19 @@ An interactive dashboard is built using **Streamlit**.
 * 📊 Visualize model performance
 * 🎯 Adjust ΔE threshold dynamically
 
-## 📈 Model Performance Visualizations
+## 📈 Model Performance Visualizations-can be seen attached 
 
 ### 🔹 ΔE Distribution
 
-![DeltaE Distribution]([deltaE distribution.png](https://github.com/HIMANSHI549/Akzonobel_lab/blob/master/deltaE%20distribution.png))
-
 ### 🔹 Accuracy vs Threshold
-
-![Accuracy Curve]([images/accuracy.png](https://github.com/HIMANSHI549/Akzonobel_lab/blob/master/accuracy%20vs%20threshold.png))
 
 ### 🔹 True vs Predicted (L Channel)
 
-![Scatter Plot]([images/scatter.png](https://github.com/HIMANSHI549/Akzonobel_lab/blob/master/true%20vs%20pred%20L.png))
-
 ### 🔹 Training Loss(all folds)
 
-![Scatter Plot](### 🔹 True vs Predicted (L Channel)
+###🔹 True vs Predicted (L Channel)
 
-![Scatter Plot]([images/scatter.png](https://github.com/HIMANSHI549/Akzonobel_lab/blob/master/true%20vs%20pred%20L.png))
-
+Most samples lie below ΔE = 0.6, indicating high perceptual accuracy.
 
 # 📁 Project Structure
 
