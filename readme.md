@@ -169,13 +169,20 @@ An interactive dashboard is built using **Streamlit**.
 * 📊 Visualize model performance
 * 🎯 Adjust ΔE threshold dynamically
 
-### Visualizations:
+## 📈 Model Performance Visualizations
 
-* ΔE Distribution Histogram
-* True vs Predicted Scatter Plot
-* Accuracy vs Threshold Curve
+### 🔹 ΔE Distribution
 
----
+![DeltaE Distribution](images/deltaE.png)
+
+### 🔹 Accuracy vs Threshold
+
+![Accuracy Curve](images/accuracy.png)
+
+### 🔹 True vs Predicted (L Channel)
+
+![Scatter Plot](images/scatter.png)
+
 
 # 📁 Project Structure
 
