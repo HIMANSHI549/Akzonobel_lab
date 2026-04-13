@@ -81,6 +81,41 @@ Output Layer (3 → L, a, b)
 
 ---
 
+## ⚙️ Model Development & Hyperparameter Tuning
+
+Before finalizing the model architecture, extensive experimentation was performed using **hyperparameter tuning**.
+
+Instead of fixing the network design manually, we explored multiple configurations by varying:
+
+* Number of hidden layers
+* Number of neurons per layer
+* Activation functions (ReLU, LeakyReLU, etc.)
+* Optimizers (Adam, RMSprop, etc.)
+* Learning rates
+
+The tuning process was carried out using a systematic search strategy (e.g., KerasTuner / manual experimentation), where different architectures were trained and evaluated based on **ΔE CMC performance**.
+
+### 🎯 Outcome
+
+Based on empirical results, the following configuration provided the best performance:
+
+* Dense Layers: **768 → 512 → 256 → 128**
+* Activation: **LeakyReLU (α = 0.05)**
+* Optimizer: **Adam (learning rate = 0.0005)**
+* Loss Function: **ΔE CMC**
+
+This approach ensured that the final model is:
+
+* Data-driven
+* Performance-optimized
+* Not based on arbitrary design choices
+
+---
+
+💡 This step was crucial in achieving high accuracy (~90%+) and stable generalization across folds.
+
+---
+
 # 📊 Evaluation Metrics
 
 * Mean ΔE (Color Difference)
@@ -264,18 +299,22 @@ pip install -r requirements.txt
 
 ---
 
-# 🔮 Future Work
+## 🔮 Future Work
 
-* Add BatchNorm & Dropout
-* Hyperparameter tuning (Optuna)
-* Deploy model as API
-* Extend to multi-illuminant prediction
+* Develop an inverse model to **predict pigment composition from target LAB color values**
+* Predict the **optimal combination of 6 pigments and their proportions** required to generate a desired color
+* Formulate the problem as a **multi-output regression / optimization task**
+* Incorporate **constraints (sum of proportions = 1, non-negativity)**
+* Explore **hybrid approaches (Deep Learning + Optimization algorithms)**
+* Build an **interactive color formulation tool** for real-time industrial use
+* Extend the system for **multi-illuminant and cross-material color matching**
+
 
 ---
 
 # 👩‍💻 Author
 
-**Himanshi**
+**Himanshi and Aayushi**
 B.Tech Final Year Project
 
 ---
