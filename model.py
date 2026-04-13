@@ -72,12 +72,10 @@ class LabColorModel:
 
         model = Sequential([
             Input(shape=(input_dim,)),
-
             Dense(768), LeakyReLU(0.05),
             Dense(512), LeakyReLU(0.05),
             Dense(256), LeakyReLU(0.05),
             Dense(128), LeakyReLU(0.05),
-
             Dense(3)
         ])
 
@@ -95,7 +93,9 @@ class LabColorModel:
 
         kf = KFold(n_splits=10, shuffle=True, random_state=42)
 
-        for train_idx, test_idx in kf.split(X):
+        for fold, (train_idx, test_idx) in enumerate(kf.split(X), 1):
+
+            print(f"FOLD {fold}")
 
             X_train, X_test = X[train_idx], X[test_idx]
             y_train, y_test = y[train_idx], y[test_idx]
