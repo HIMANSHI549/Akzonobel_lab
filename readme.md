@@ -1,3 +1,5 @@
+
+
 # 🎨 Lab Color Prediction using Deep Learning (ΔE CMC Optimized)
 
 A deep learning-based system designed to predict **CIE LAB color values** from spectral reflectance and pigment composition data, optimized using the **ΔE CMC perceptual color difference metric**.
@@ -248,6 +250,14 @@ for col in spec_cols + pig_cols:
 df[spec_cols + pig_cols] = df[spec_cols + pig_cols].fillna(0)
 
 X = df[spec_cols + pig_cols].values
+
+https://github.com/user-attachments/assets/3d34e5b3-b703-47a2-bd30-a01e32edd2c7
+
+
+
+https://github.com/user-attachments/assets/790616f0-ecc8-4cca-bc87-78cf4363a8b4
+
+
 y = df[lab_cols].values
 
 # Train model
