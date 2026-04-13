@@ -179,8 +179,6 @@ An interactive dashboard is built using **Streamlit**.
 
 ### 🔹 Training Loss(all folds)
 
-###🔹 True vs Predicted (L Channel)
-
 Most samples lie below ΔE = 0.6, indicating high perceptual accuracy.
 
 # 📁 Project Structure
